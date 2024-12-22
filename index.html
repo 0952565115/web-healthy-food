@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFit Frenzy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search menu">
+            <select id="prepTime">
+                <option value="">Preparation Time</option>
+                <option value="15">0-15 mins</option>
+                <option value="30">15-30 mins</option>
+                <option value="60">30-60 mins</option>
+                <option value="more">1 hour or more</option>
+            </select>
+            <select id="category">
+                <option value="">Food Category</option>
+                <option value="low-calorie">Low Calorie</option>
+                <option value="healthy">Healthy</option>
+                <option value="energy">Energy Booster</option>
+                <option value="low-sodium">Low Sodium</option>
+                <option value="high-protein">High Protein</option>
+                <option value="low-sugar">Low Sugar</option>
+            </select>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <!-- Menu items will be populated here -->
+        </div>
+
+        <div class="pagination">
+            <button id="prevPage" disabled><i class="fas fa-chevron-left"></i></button>
+            <select id="pageSelect"></select>
+            <button id="nextPage"><i class="fas fa-chevron-right"></i></button>
+        </div>      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
